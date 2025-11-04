@@ -1,167 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <link rel="stylesheet" href="index.css">
-    <link rel="shortcut icon" href="coverimage.png">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is my portfolio created by using html and css technologies">
-    <meta name="keywords"
-        content="portfolio,SanchayKumar,html,css,javascript,reactjs,course,IT,python,development,sql,django">
-    <title>My PortFolio | SANCHAY KUMAR</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Sanchay Kumar — Web Developer and Data Analyst skilled in Django, Python, JavaScript, SQL, and Power BI." />
+  <title>Sanchay Kumar | Web Developer & Data Analyst</title>
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
-    <section>
-        <header>
-            <h1 class="main-logo"><span>S</span>ANCHAY <span>K</span>UMAR</h1>
-            <div class="nav-item">
-                <a href="#">Home</a>
-                <a href="">About</a>
-                <a href="">Projects</a>
-                <a href="">Service</a>
-                <a href="">Contact</a>
-                <a href="Sanchay_resume.pdf" download>Resume</a>
-            </div>
-        </header>
-
-        <!-- Home section -->
-<div class="container home">
-    <div class="left">
-        <h2>Hello, I'm <span>Sanchay Kumar</span></h2>
-        <p>
-            I am a passionate web developer skilled in HTML, CSS, JavaScript, SQL, 
-            Python, and Django. I love building interactive web applications and solving 
-            real-world problems with technology. Welcome to my portfolio!
-        </p>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home"><span>S</span>anchay <span>K</span>umar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-center align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item">
+            <a class="btn btn-custom nav-resume-btn" href="Sanchay_WD.pdf" target="_blank">View Resume</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="right">
-        <img src="SANCHAY.jpg" alt="My Photo" class="profile-img">
-    </div>
-</div>
-<!-- Home section -->
+  </nav>
 
-        <!-- About section -->
-        <div class="container">
-            <h1>About</h1>
-            <p>I am a versatile professional with expertise in both Front-End Development and Data Analysis. I design and build responsive, user-centric web interfaces using HTML, CSS, JavaScript, and modern frameworks like React. Alongside this, I leverage data analysis tools like Python, SQL, Excel, and Tableau to extract insights, visualize trends, and support data-driven decisions. With a strong eye for design and a passion for analytics, I bridge the gap between intuitive user experiences and intelligent business solutions.</p>
+  <!-- Hero -->
+  <section id="home" class="hero d-flex align-items-center justify-content-center flex-column flex-lg-row text-center text-lg-start">
+    <div class="hero-text" data-aos="fade-right">
+      <h1>Hi, I'm <span>Sanchay Kumar</span></h1>
+      <p>
+        A dedicated <strong>Web Developer & Data Analyst</strong> skilled in
+        <em>Python, Django, SQL, JavaScript, and Power BI</em>.
+        I specialize in building responsive web applications and transforming data into actionable insights.
+      </p>
+      <a href="#contact" class="btn btn-custom mt-3">Hire Me</a>
+    </div>
+    <div class="hero-img" data-aos="fade-left">
+      <img src="SANCHAY.png" alt="Sanchay Kumar" class="profile-img" />
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="container section">
+    <h2 data-aos="fade-up">About Me</h2>
+    <p data-aos="fade-up">
+      I am a results-driven <strong>Computer Science Engineering student</strong> with a passion for designing efficient and visually engaging digital experiences. 
+      I focus on crafting clean, maintainable code and creating data-driven solutions that enhance business performance.  
+      My expertise lies in <strong>full-stack web development, database management, and data visualization</strong>.  
+      I thrive in collaborative environments and constantly seek to learn new technologies that improve performance and scalability.  
+      I aim to contribute meaningfully to innovative tech projects that bridge the gap between design, data, and development.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="container section">
+    <h2 data-aos="fade-up">Technical Skills</h2>
+    <div class="row g-3" data-aos="fade-up">
+      <div class="col-md-3 col-6"><div class="skill-card">HTML / CSS</div></div>
+      <div class="col-md-3 col-6"><div class="skill-card">JavaScript</div></div>
+      <div class="col-md-3 col-6"><div class="skill-card">Python / Django</div></div>
+      <div class="col-md-3 col-6"><div class="skill-card">SQL / MySQL</div></div>
+      <div class="col-md-3 col-6"><div class="skill-card">Bootstrap</div></div>
+      <div class="col-md-3 col-6"><div class="skill-card">Git / GitHub</div></div>
+      <div class="col-md-3 col-6"><div class="skill-card">Power BI / Excel</div></div>
+      <div class="col-md-3 col-6"><div class="skill-card">Data Cleaning / ETL</div></div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="container section">
+    <h2 data-aos="fade-up">Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card project-card">
+          <img src="blinkit.jpg" class="card-img-top" alt="Blinkit Data Analysis" />
+          <div class="card-body">
+            <h5 class="card-title">Blinkit Data Analysis</h5>
+            <p class="card-text">
+              Conducted complete data analysis using Excel and Power BI — data cleaning, visualization, and dashboard creation.
+              Derived insights into outlet performance, sales growth, and customer purchase patterns.
+            </p>
+          </div>
         </div>
-        <!-- About section -->
-        <!-- Project section -->
-        <div class="container project">
-            <h1>Project</h1>
-            <div class="all-projects">
-                <div class="card-wrapper">
-                    <div class="card">
-                        <img src="coverimage.png" alt="">
-                    </div>
-                    <div class="card detail">
-                        <h2>Cyber Security Solutions</h2>
-                        <p class="card-para">HTML,CSS,JavaScript,ReactJS,Python,PostgreSQL</p>
-                        <div class="btns">
-                            <a href="">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                                    <path
-                                        d="M320 144C254.8 144 201.2 173.6 160.1 211.7C121.6 247.5 95 290 81.4 320C95 350 121.6 392.5 160.1 428.3C201.2 466.4 254.8 496 320 496C385.2 496 438.8 466.4 479.9 428.3C518.4 392.5 545 350 558.6 320C545 290 518.4 247.5 479.9 211.7C438.8 173.6 385.2 144 320 144zM127.4 176.6C174.5 132.8 239.2 96 320 96C400.8 96 465.5 132.8 512.6 176.6C559.4 220.1 590.7 272 605.6 307.7C608.9 315.6 608.9 324.4 605.6 332.3C590.7 368 559.4 420 512.6 463.4C465.5 507.1 400.8 544 320 544C239.2 544 174.5 507.2 127.4 463.4C80.6 419.9 49.3 368 34.4 332.3C31.1 324.4 31.1 315.6 34.4 307.7C49.3 272 80.6 220 127.4 176.6zM320 400C364.2 400 400 364.2 400 320C400 290.4 383.9 264.5 360 250.7C358.6 310.4 310.4 358.6 250.7 360C264.5 383.9 290.4 400 320 400zM240.4 311.6C242.9 311.9 245.4 312 248 312C283.3 312 312 283.3 312 248C312 245.4 311.8 242.9 311.6 240.4C274.2 244.3 244.4 274.1 240.5 311.5zM286 196.6C296.8 193.6 308.2 192.1 319.9 192.1C328.7 192.1 337.4 193 345.7 194.7C346 194.8 346.2 194.8 346.5 194.9C404.4 207.1 447.9 258.6 447.9 320.1C447.9 390.8 390.6 448.1 319.9 448.1C258.3 448.1 206.9 404.6 194.7 346.7C192.9 338.1 191.9 329.2 191.9 320.1C191.9 309.1 193.3 298.3 195.9 288.1C196.1 287.4 196.2 286.8 196.4 286.2C208.3 242.8 242.5 208.6 285.9 196.7z" />
-                                </svg>
-                            </a>
-                            <a href="">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                                    <path
-                                        d="M392.8 65.2C375.8 60.3 358.1 70.2 353.2 87.2L225.2 535.2C220.3 552.2 230.2 569.9 247.2 574.8C264.2 579.7 281.9 569.8 286.8 552.8L414.8 104.8C419.7 87.8 409.8 70.1 392.8 65.2zM457.4 201.3C444.9 213.8 444.9 234.1 457.4 246.6L530.8 320L457.4 393.4C444.9 405.9 444.9 426.2 457.4 438.7C469.9 451.2 490.2 451.2 502.7 438.7L598.7 342.7C611.2 330.2 611.2 309.9 598.7 297.4L502.7 201.4C490.2 188.9 469.9 188.9 457.4 201.4zM182.7 201.3C170.2 188.8 149.9 188.8 137.4 201.3L41.4 297.3C28.9 309.8 28.9 330.1 41.4 342.6L137.4 438.6C149.9 451.1 170.2 451.1 182.7 438.6C195.2 426.1 195.2 405.8 182.7 393.3L109.3 320L182.6 246.6C195.1 234.1 195.1 213.8 182.6 201.3z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-wrapper">
-                    <div class="card">
-                        <img src="coverimage.png" alt="">
-                    </div>
-                    <div class="card detail">
-                        <h2>Cyber Security Solutions</h2>
-                        <p class="card-para">HTML,CSS,JavaScript,ReactJS,Python,PostgreSQL</p>
-                        <div class="btns">
-                            <a href="">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                                    <path
-                                        d="M320 144C254.8 144 201.2 173.6 160.1 211.7C121.6 247.5 95 290 81.4 320C95 350 121.6 392.5 160.1 428.3C201.2 466.4 254.8 496 320 496C385.2 496 438.8 466.4 479.9 428.3C518.4 392.5 545 350 558.6 320C545 290 518.4 247.5 479.9 211.7C438.8 173.6 385.2 144 320 144zM127.4 176.6C174.5 132.8 239.2 96 320 96C400.8 96 465.5 132.8 512.6 176.6C559.4 220.1 590.7 272 605.6 307.7C608.9 315.6 608.9 324.4 605.6 332.3C590.7 368 559.4 420 512.6 463.4C465.5 507.1 400.8 544 320 544C239.2 544 174.5 507.2 127.4 463.4C80.6 419.9 49.3 368 34.4 332.3C31.1 324.4 31.1 315.6 34.4 307.7C49.3 272 80.6 220 127.4 176.6zM320 400C364.2 400 400 364.2 400 320C400 290.4 383.9 264.5 360 250.7C358.6 310.4 310.4 358.6 250.7 360C264.5 383.9 290.4 400 320 400zM240.4 311.6C242.9 311.9 245.4 312 248 312C283.3 312 312 283.3 312 248C312 245.4 311.8 242.9 311.6 240.4C274.2 244.3 244.4 274.1 240.5 311.5zM286 196.6C296.8 193.6 308.2 192.1 319.9 192.1C328.7 192.1 337.4 193 345.7 194.7C346 194.8 346.2 194.8 346.5 194.9C404.4 207.1 447.9 258.6 447.9 320.1C447.9 390.8 390.6 448.1 319.9 448.1C258.3 448.1 206.9 404.6 194.7 346.7C192.9 338.1 191.9 329.2 191.9 320.1C191.9 309.1 193.3 298.3 195.9 288.1C196.1 287.4 196.2 286.8 196.4 286.2C208.3 242.8 242.5 208.6 285.9 196.7z" />
-                                </svg>
-                            </a>
-                            <a href="">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                                    <path
-                                        d="M392.8 65.2C375.8 60.3 358.1 70.2 353.2 87.2L225.2 535.2C220.3 552.2 230.2 569.9 247.2 574.8C264.2 579.7 281.9 569.8 286.8 552.8L414.8 104.8C419.7 87.8 409.8 70.1 392.8 65.2zM457.4 201.3C444.9 213.8 444.9 234.1 457.4 246.6L530.8 320L457.4 393.4C444.9 405.9 444.9 426.2 457.4 438.7C469.9 451.2 490.2 451.2 502.7 438.7L598.7 342.7C611.2 330.2 611.2 309.9 598.7 297.4L502.7 201.4C490.2 188.9 469.9 188.9 457.4 201.4zM182.7 201.3C170.2 188.8 149.9 188.8 137.4 201.3L41.4 297.3C28.9 309.8 28.9 330.1 41.4 342.6L137.4 438.6C149.9 451.1 170.2 451.1 182.7 438.6C195.2 426.1 195.2 405.8 182.7 393.3L109.3 320L182.6 246.6C195.1 234.1 195.1 213.8 182.6 201.3z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-wrapper">
-                    <div class="card">
-                        <img src="coverimage.png" alt="">
-                    </div>
-                    <div class="card detail">
-                        <h2>Cyber Security Solutions</h2>
-                        <p class="card-para">HTML,CSS,JavaScript,ReactJS,Python,PostgreSQL</p>
-                        <div class="btns">
-                            <a href="">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                                    <path
-                                        d="M320 144C254.8 144 201.2 173.6 160.1 211.7C121.6 247.5 95 290 81.4 320C95 350 121.6 392.5 160.1 428.3C201.2 466.4 254.8 496 320 496C385.2 496 438.8 466.4 479.9 428.3C518.4 392.5 545 350 558.6 320C545 290 518.4 247.5 479.9 211.7C438.8 173.6 385.2 144 320 144zM127.4 176.6C174.5 132.8 239.2 96 320 96C400.8 96 465.5 132.8 512.6 176.6C559.4 220.1 590.7 272 605.6 307.7C608.9 315.6 608.9 324.4 605.6 332.3C590.7 368 559.4 420 512.6 463.4C465.5 507.1 400.8 544 320 544C239.2 544 174.5 507.2 127.4 463.4C80.6 419.9 49.3 368 34.4 332.3C31.1 324.4 31.1 315.6 34.4 307.7C49.3 272 80.6 220 127.4 176.6zM320 400C364.2 400 400 364.2 400 320C400 290.4 383.9 264.5 360 250.7C358.6 310.4 310.4 358.6 250.7 360C264.5 383.9 290.4 400 320 400zM240.4 311.6C242.9 311.9 245.4 312 248 312C283.3 312 312 283.3 312 248C312 245.4 311.8 242.9 311.6 240.4C274.2 244.3 244.4 274.1 240.5 311.5zM286 196.6C296.8 193.6 308.2 192.1 319.9 192.1C328.7 192.1 337.4 193 345.7 194.7C346 194.8 346.2 194.8 346.5 194.9C404.4 207.1 447.9 258.6 447.9 320.1C447.9 390.8 390.6 448.1 319.9 448.1C258.3 448.1 206.9 404.6 194.7 346.7C192.9 338.1 191.9 329.2 191.9 320.1C191.9 309.1 193.3 298.3 195.9 288.1C196.1 287.4 196.2 286.8 196.4 286.2C208.3 242.8 242.5 208.6 285.9 196.7z" />
-                                </svg>
-                            </a>
-                            <a href="">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                                    <path
-                                        d="M392.8 65.2C375.8 60.3 358.1 70.2 353.2 87.2L225.2 535.2C220.3 552.2 230.2 569.9 247.2 574.8C264.2 579.7 281.9 569.8 286.8 552.8L414.8 104.8C419.7 87.8 409.8 70.1 392.8 65.2zM457.4 201.3C444.9 213.8 444.9 234.1 457.4 246.6L530.8 320L457.4 393.4C444.9 405.9 444.9 426.2 457.4 438.7C469.9 451.2 490.2 451.2 502.7 438.7L598.7 342.7C611.2 330.2 611.2 309.9 598.7 297.4L502.7 201.4C490.2 188.9 469.9 188.9 457.4 201.4zM182.7 201.3C170.2 188.8 149.9 188.8 137.4 201.3L41.4 297.3C28.9 309.8 28.9 330.1 41.4 342.6L137.4 438.6C149.9 451.1 170.2 451.1 182.7 438.6C195.2 426.1 195.2 405.8 182.7 393.3L109.3 320L182.6 246.6C195.1 234.1 195.1 213.8 182.6 201.3z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-wrapper">
-                    <div class="card">
-                        <img src="coverimage.png" alt="">
-                    </div>
-                    <div class="card detail">
-                        <h2>Cyber Security Solutions</h2>
-                        <p class="card-para">HTML,CSS,JavaScript,ReactJS,Python,PostgreSQL</p>
-                        <div class="btns">
-                            <a href="">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                                    <path
-                                        d="M320 144C254.8 144 201.2 173.6 160.1 211.7C121.6 247.5 95 290 81.4 320C95 350 121.6 392.5 160.1 428.3C201.2 466.4 254.8 496 320 496C385.2 496 438.8 466.4 479.9 428.3C518.4 392.5 545 350 558.6 320C545 290 518.4 247.5 479.9 211.7C438.8 173.6 385.2 144 320 144zM127.4 176.6C174.5 132.8 239.2 96 320 96C400.8 96 465.5 132.8 512.6 176.6C559.4 220.1 590.7 272 605.6 307.7C608.9 315.6 608.9 324.4 605.6 332.3C590.7 368 559.4 420 512.6 463.4C465.5 507.1 400.8 544 320 544C239.2 544 174.5 507.2 127.4 463.4C80.6 419.9 49.3 368 34.4 332.3C31.1 324.4 31.1 315.6 34.4 307.7C49.3 272 80.6 220 127.4 176.6zM320 400C364.2 400 400 364.2 400 320C400 290.4 383.9 264.5 360 250.7C358.6 310.4 310.4 358.6 250.7 360C264.5 383.9 290.4 400 320 400zM240.4 311.6C242.9 311.9 245.4 312 248 312C283.3 312 312 283.3 312 248C312 245.4 311.8 242.9 311.6 240.4C274.2 244.3 244.4 274.1 240.5 311.5zM286 196.6C296.8 193.6 308.2 192.1 319.9 192.1C328.7 192.1 337.4 193 345.7 194.7C346 194.8 346.2 194.8 346.5 194.9C404.4 207.1 447.9 258.6 447.9 320.1C447.9 390.8 390.6 448.1 319.9 448.1C258.3 448.1 206.9 404.6 194.7 346.7C192.9 338.1 191.9 329.2 191.9 320.1C191.9 309.1 193.3 298.3 195.9 288.1C196.1 287.4 196.2 286.8 196.4 286.2C208.3 242.8 242.5 208.6 285.9 196.7z" />
-                                </svg>
-                            </a>
-                            <a href="">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                                    <path
-                                        d="M392.8 65.2C375.8 60.3 358.1 70.2 353.2 87.2L225.2 535.2C220.3 552.2 230.2 569.9 247.2 574.8C264.2 579.7 281.9 569.8 286.8 552.8L414.8 104.8C419.7 87.8 409.8 70.1 392.8 65.2zM457.4 201.3C444.9 213.8 444.9 234.1 457.4 246.6L530.8 320L457.4 393.4C444.9 405.9 444.9 426.2 457.4 438.7C469.9 451.2 490.2 451.2 502.7 438.7L598.7 342.7C611.2 330.2 611.2 309.9 598.7 297.4L502.7 201.4C490.2 188.9 469.9 188.9 457.4 201.4zM182.7 201.3C170.2 188.8 149.9 188.8 137.4 201.3L41.4 297.3C28.9 309.8 28.9 330.1 41.4 342.6L137.4 438.6C149.9 451.1 170.2 451.1 182.7 438.6C195.2 426.1 195.2 405.8 182.7 393.3L109.3 320L182.6 246.6C195.1 234.1 195.1 213.8 182.6 201.3z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card project-card">
+          <img src="project2.webp" class="card-img-top" alt="Movie Ticket Booking System" />
+          <div class="card-body">
+            <h5 class="card-title">Movie Ticket Booking System</h5>
+            <p class="card-text">
+              Full-stack Django web app with user authentication, admin panel, and integrated payment gateway for secure transactions.
+            </p>
+          </div>
         </div>
-            <!-- Project section -->
-            <!-- Service section -->
-            <div class="container">
-                <h1>Service</h1>
-            </div>
-            <!-- Service section -->
-            <!-- Contact section -->
-            <div class="container">
-                <h1>Contact</h1>
-            </div>
-            <!-- Contact section -->
-    </section>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card project-card">
+          <img src="project3.webp" class="card-img-top" alt="Farm Intelligence System" />
+          <div class="card-body">
+            <h5 class="card-title">Farm Intelligence System</h5>
+            <p class="card-text">
+              IoT & ML-based platform analyzing soil and weather data for smart agricultural insights, promoting sustainable farming.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="container section">
+    <h2 data-aos="fade-up">Education</h2>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-5" data-aos="fade-up">
+        <div class="edu-card p-3">
+          <h5>B.E. Computer Science and Engineering</h5>
+          <p>Knowledge Institute of Technology, Salem — <strong>CGPA: 7.5</strong></p>
+          <small>2021 - 2025</small>
+        </div>
+      </div>
+      <div class="col-md-5" data-aos="fade-up">
+        <div class="edu-card p-3">
+          <h5>HSC</h5>
+          <p>Sri Gayathri Higher Secondary School, Salem — <strong>78%</strong></p>
+          <small>2020 - 2021</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications" class="container section">
+    <h2 data-aos="fade-up">Certifications</h2>
+    <div class="row g-3 justify-content-center" data-aos="fade-up">
+      <div class="col-md-5 col-12">
+        <div class="cert-card"><i class="fa-solid fa-database"></i><p><strong>Python Full Stack with Data Analytics</strong> — PySpiders (In Progress)</p></div>
+      </div>
+      <div class="col-md-5 col-12">
+        <div class="cert-card"><i class="fa-brands fa-aws"></i><p><strong>AWS Academy Cloud Foundations</strong> — Amazon Web Services (2024)</p></div>
+      </div>
+      <div class="col-md-5 col-12">
+        <div class="cert-card"><i class="fa-solid fa-laptop-code"></i><p><strong>Python Full Stack Development</strong> — Refinement Software Solutions (2023)</p></div>
+      </div>
+      <div class="col-md-5 col-12">
+        <div class="cert-card"><i class="fa-solid fa-mobile-screen-button"></i><p><strong>App Development (Basics)</strong> — KarmaDev.in (2023)</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container section text-center">
+    <h2 data-aos="fade-up">Contact Me</h2>
+    <p data-aos="fade-up">Let’s collaborate to turn ideas into impactful digital products!</p>
+    <p data-aos="fade-up"><i class="fa-solid fa-envelope"></i> <a href="mailto:samchaykumar@gmail.com">samchaykumar@gmail.com</a></p>
+    <p data-aos="fade-up"><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/sanchay-k-1b199523b" target="_blank">linkedin.com/in/sanchay-k-1b199523b</a></p>
+    <p data-aos="fade-up"><i class="fa-brands fa-github"></i> <a href="https://github.com/sanchaykumar2305" target="_blank">github.com/sanchaykumar2305</a></p>
+    <a href="Sanchay_WD.pdf" target="_blank" class="btn btn-custom mt-3">View Resume</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Sanchay Kumar | Web Developer & Data Analyst</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
 </body>
-
 </html>
