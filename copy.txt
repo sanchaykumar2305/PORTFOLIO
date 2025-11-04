@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+:root{
+    --primary-text:#fff;
+    --primary-special-text:#ff8733;
+}
+section{
+    width: 100%;
+    min-height:600vh ;
+    background-color: darkslategray;
+}
+section>header{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.511);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: darkslategray
+}
+.main-logo{
+    font-size: 3.5rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    color:var(--primary-text);
+    span{
+        color: var(--primary-special-text);
+        font-weight: 750;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}
+header>.nav-item{
+    width: 50%;
+    display: flex;
+    align-items: c;
+    justify-content: space-evenly;
+    a{
+        text-decoration: none;
+        font-size: 1.3rem;
+        color: var(--primary-text);
+    }
+    a:hover{
+        color:var(--primary-special-text) ;
+    }
+}
+.container{
+    height:100vh;
+    width: 100%;
+    border: white solid 1px;
+}
+h1{
+    color: #fff;
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home .left{
+    height: 100%;
+    width: 50%;
+    background-color: cornsilk;
+}
+.home>.right{
+    height: 100%;
+    width: 50%;
+    background-color: cyan;
+}
+.project{
+height: fit-content;
+padding: 20px 0px;
+}
+.project>.all-projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    position: relative;
+}
+.all-projects>.card{
+    height: 300px;
+    width: 550px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.all-projects img{
+    width: 100%;
+}
+.all-projects .detail{
+    height: 47%;
+    width: 40.7%;
+    backdrop-filter: blur(2px);
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; 
+    /* display: none; */
+}
+.detail>.btns{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.detail a{
+    background-color: #ff8733;
+    padding: 15px 0px;
+    margin: 0px 20px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.534) inset;
+}
+.detail svg{
+    /* height: 100%; */
+    width: 15%;
+}
+.card-para{
+    font-size: 1.3rem;
+}
+.card-wrapper{
+    height: 300px;
+    width: 550px;
+    /* overflow: hidden; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="coverimage.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is my Portfolio created by using HTML and CSS Technologies">
+    <meta name="keywords" content="portfolio,sanchayKumar,html,css,javascript,reactjs,course,IT,python,SQL,Django,development">
+    <title>My PortFolio | Sanchay Kumar</title>
+</head>
+<body>
+    <section>
+        <header>
+            <h1 class="main-logo">Sanchay Kumar</h1>
+            <div class="nav-item">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Projects</a>
+                <a href="">Service</a>
+                <a href="">Contact</a>
+                <a href="Sanchay_resume.pdf">Resume</a>
+            </div>
+        </header>
+
+        <!-- Home Section -->
+        <div class="container home">
+            <div class="left">
+
+            </div>
+            <div class="right">
+               
+            </div>
+        </div>
+        <!-- Home Section -->
+        <!-- About Section -->
+        <div class="container project">
+            <h1>PROJECT</h1>
+            <div class="all-projects">
+                <div class="card">
+                    <img src="coverimage.png" alt="">
+                </div>
+                <div class="card detail">
+                        <strong>KST CONSTRUCTIONS</strong>
+                        <p>We Build Your DREAM House</p>
+                        <div class="btns">
+                            <a href="👁️"></a>
+                            <a href=""></a>
+                        </div>
+                </div>
+
+                <div class="card">
+                    <img src="coverimage.png" alt="">
+                </div>
+                <div class="card detail">
+                    
+                </div>
+
+                <div class="card">
+                    <img src="coverimage.png" alt="">
+                </div>
+                <div class="card detail">
+                    
+                </div>
+
+                <div class="card">
+                    <img src="coverimage.png" alt="">
+                </div>
+                <div class="card detail">
+                    
+                </div>
+
+                
+                
+            </div>
+        </div>
+        <!-- About Section -->
+        <!-- Project Sction -->
+        <div class="container"></div>
+        <!-- Project Sction -->
+        <!-- Service Section -->
+        <div class="container"></div>
+        <!-- Service Section -->
+        <!-- Contact Section -->
+        <div class="container"></div>
+        <!-- Contact Section -->
+
+         
+
+    </section>
+    
+</body>
+</html>
