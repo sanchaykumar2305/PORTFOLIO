@@ -243,11 +243,14 @@ body::before {
   position: absolute;
   inset: 0;
   border-radius: 26px;
-  padding: 1px;
+  padding: 1px; /* This defines the border thickness */
   background: linear-gradient(135deg, rgba(56, 189, 248, 0.7), rgba(168, 85, 247, 0.4));
-  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
-          mask-composite: exclude;
+  mask-composite: exclude;
+  pointer-events: none; /* Prevents the pseudo-element from blocking clicks */
+  z-index: -1; /* Pushes the border behind the content */
   opacity: 0.9;
 }
 
